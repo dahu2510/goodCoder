@@ -1,0 +1,44 @@
+.clockList {
+    width: 350px;
+    height: 350px;
+    text-align: center;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px;
+    background: #ebebeb;
+    margin: 10px;
+
+    p {
+        font-size: 18px;
+        line-height: 36px;
+        margin: 0;
+    }
+
+    p:not(:nth-child(1)) {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+        font-variant: tabular-nums;
+    }
+
+    span {
+        position: absolute;
+        right: 10px;
+        top: 0;
+        transform: rotate(45deg);
+        font-size: 20px;
+        display: none;
+        color: #666;
+    }
+
+    span:hover {
+        color: #333;
+    }
+}
+
+.clockList:hover {
+    span {
+        display: block;
+        cursor: pointer;
+    }
+}
